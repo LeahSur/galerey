@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    background-color: rgb(60, 60, 83);
+}
+
+/* Шапочка */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 0px;
+    background-color: rgb(50, 50, 63);
+    height: 80px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 360px) {
+    .header {
+        padding: 100px;
+        margin: 0;
+    }
+  }
+
+.batton a{
+    text-decoration: none;
+}
+
+.btn-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+.btn-link:hover {
+    color: rgb(139, 142, 178);
+}
+
+
+/* тело */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 320px;
+    height: 180px;
+    display: inline-block;
+    
+    position: relative;
+    background-size: cover;
+    margin: 20px;
+    border-radius: 0 20px;
+    overflow: hidden;
+    border: 5px double rgb(50, 50, 63);
+    font-size: 14px;
+}
+
+.capital {
+    text-align: center;
+}
+
+.download {
+    transition: right 0.3s;
+    background-color: antiquewhite;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    right: -220px;
+    bottom: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: Arial;
+    cursor: pointer;
+
+}
+
+.card:hover .download{
+    right: 20px;
+}
+
+.capital { 
+    color: rgb(200, 200, 200);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    display: block; 
+    position: relative;
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+
+.capital:hover{
+  opacity: 0.4;
+}
+
+/*Подвал*/
+.basement {
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    background-color: rgb(50, 50, 63);
+}
+
+.basement p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
